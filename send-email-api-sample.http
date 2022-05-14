@@ -1,0 +1,28 @@
+# メール送信
+@apikey={{ SendGridのapiKey }}
+
+POST https://api.sendgrid.com/v3/mail/send
+Authorization: Bearer {{apikey}}
+Content-Type: application/json
+
+{
+  "personalizations": [
+    {
+      "to": [
+        {
+          "email": "to@example.com"
+        }
+      ],
+      "subject": "WebAPIでのサンプルメール"
+    }
+  ],
+  "from": {
+    "email": "from@example.com"
+  },
+  "content": [
+    {
+      "type": "text/plain",
+      "value": "テストメールです！"
+    }
+  ]
+}
