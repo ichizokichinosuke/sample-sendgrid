@@ -1,4 +1,4 @@
-# メール送信
+### 個別送信
 @apikey={{ SendGridのapiKey }}
 
 POST https://api.sendgrid.com/v3/mail/send
@@ -22,7 +22,36 @@ Content-Type: application/json
   "content": [
     {
       "type": "text/plain",
-      "value": "テストメールです！"
+      "value": "個別送信テストメールです！"
     }
   ]
 }
+
+
+### 一括送信
+
+POST https://api.sendgrid.com/v3/mail/send
+Authorization: Bearer {{apikey}}
+Content-Type: application/json
+
+{
+  "personalizations" : [
+    {
+      "to": [{"email": "to1@example.com"}],
+      "substitutions": {"-name-": "アリス"}
+    },
+    {
+      "to": [{"email": "to2@example.com"}],
+      "substitutions": {"-name-": "ボブ"}
+    }
+  ],
+  "from": {"email": "from@example.com"},
+  "subject": "一括送信テスト",
+  "content": [
+    {
+      "type": "text/plain",
+      "value": "ようこそ！-name-様"
+    }
+  ]
+}
+
