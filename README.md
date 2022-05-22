@@ -31,4 +31,7 @@ source ./sendgrid.env
 1. [公式ドキュメント](https://sendgrid.kke.co.jp/docs/API_Reference/Webhooks/event.html#:~:text=%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%80%82-,%E3%82%BB%E3%83%83%E3%83%88%E3%82%A2%E3%83%83%E3%83%97,-Event%20Webhook%20%E3%82%92)を参考にSendGridのSettingsページでEvent Webhookを有効にする。
 1. ```send-each.py``` を実行するなど、POST先のURLで設定したWebhookが機能しているか確認する。
 ## Reference
-- [公式](https://sendgrid.kke.co.jp/docs/Tutorials/A_Transaction_Mail/send_transaction_mail.html#:~:text=%E3%81%AB%E6%8C%87%E5%AE%9A%E5%8F%AF%E8%83%BD-,Web%20API%E3%81%A7%E9%80%81%E4%BF%A1%E3%81%99%E3%82%8B,-Web%20API%E3%82%92)
+- [API](https://sendgrid.kke.co.jp/docs/Tutorials/A_Transaction_Mail/send_transaction_mail.html#:~:text=%E3%81%AB%E6%8C%87%E5%AE%9A%E5%8F%AF%E8%83%BD-,Web%20API%E3%81%A7%E9%80%81%E4%BF%A1%E3%81%99%E3%82%8B,-Web%20API%E3%82%92)
+- [Event Webhook](https://sendgrid.kke.co.jp/docs/API_Reference/Webhooks/event.html)
+- [Inbound Webhook](https://sendgrid.kke.co.jp/docs/API_Reference/Webhooks/parse.html)
+- [Python library](https://github.com/sendgrid/sendgrid-python)
