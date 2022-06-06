@@ -1,0 +1,21 @@
+{
+    "personalizations": [
+      {
+        "to": [
+          {
+            "email": "bugattiveyroooone@icloud.com"
+          }
+        ],
+        "subject": "WebAPIでのサンプルメール"
+      }
+    ],
+    "from": {
+      "email": "nuuuukemw@gmail.com"
+    },
+    "content": [
+      {
+        "type": "text/plain",
+        "value": "個別送信テストメールです！"
+      }
+    ]
+  }
